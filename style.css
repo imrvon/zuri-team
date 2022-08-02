@@ -1,0 +1,259 @@
+@import url('http://fonts.cdnfonts.com/css/averta-blackitalic');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Averta-Regular', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Zuri Team Page */
+
+/* Zuri Head */
+#zuri-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(img/hero-bg.svg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 5rem;
+    text-align: center;
+    height: 100vh;
+}
+
+#zuri-head img {
+    margin-bottom: 5rem;
+}
+
+#zuri-head h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 800;
+    color: #514949;
+    margin-bottom: 2.5rem;
+}
+
+#zuri-head p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #514949;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+#zuri-head a {
+    color: #E7332B;
+    text-decoration: none;
+}
+
+#zuri-head .zuri-head-btn {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5.7rem;
+}
+
+#zuri-head .zuri-head-btn a {
+    padding: 11px 28px;
+    border: 1px solid #E7332B;
+}
+
+#zuri-head .zuri-head-btn .btn-fill {
+    color: #ffffff;
+    background-color: #E7332B;
+}
+
+#zuri-head .zuri-head-btn .btn-fill:hover {
+    color: #E7332B;
+    background-color: transparent;
+}
+
+#zuri-head .zuri-head-btn .btn-outline:hover {
+    color: #ffffff;
+    background-color: #E7332B;
+}
+
+/* Zuri Main */
+
+#zuri-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#zuri-main .zuri-main-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 8.5rem 0 2rem;
+    background-color: #ffffff;
+}
+
+#zuri-main .zuri-main-top h3 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #E7332B;
+}
+
+#zuri-main .zuri-main-top p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #514949;
+}
+
+#zuri-main .zuri-main-boxes {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+#zuri-main .zuri-main-box {
+    background-color: #FFFAFA;
+    font-weight: 400;
+    padding: 3.8rem 2.9rem 5rem 2.25rem;
+    position: relative;
+    width: 33.3%;
+}
+
+#zuri-main .zuri-main-box img {
+    margin-bottom: 3rem;
+}
+
+#zuri-main .zuri-main-box .under-bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -30%;
+}
+
+#zuri-main .zuri-main-box .left-img {
+    left: -8%;    
+}
+
+#zuri-main .zuri-main-box .right-img {
+    right: -8%;
+}
+
+#zuri-main .zuri-main-box p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #514949;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+#zuri-main .zuri-main-box a {
+    color: #E7332B;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+/* Zuri Footer */
+
+#zuri-footer {
+    margin-top: 13rem;
+    padding: 2rem;
+}
+
+#zuri-footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+
+#zuri-footer .footer-top h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#zuri-footer .footer-top a {
+    color: #E7332B;
+    display: block;
+    text-decoration: none;
+    line-height: 2.5rem;
+}
+
+#zuri-footer .footer-top .social-item {
+    width: 1.125rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#zuri-footer .footer-bottom {
+    margin: 2rem 0 5rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #514949;
+    font-weight: 700;
+}
+
+#footer-zuri hr {
+    border: 0.7px solid #514949;
+    opacity: 0.2;
+}
+
+
+/* Accordion */
+
+.accordion {
+    max-width: 800px;
+}
+
+.accordion .accordion-container {
+    position: relative;
+    margin: 0.625rem 1.25rem;
+}
+
+.accordion .accordion-container .label {
+    position: relative;
+    padding: 0.625rem;
+    cursor: pointer;
+}
+
+.accordion .accordion-container .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion .accordion-container .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .accordion-container.active .content {
+    height: 4rem;
+    padding: 0.625rem;
+}
+
+.accordion .accordion-container.active .label::before {
+    content: '-';
+}
