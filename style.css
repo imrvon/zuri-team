@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/averta-blackitalic');
+@import url('http://fonts.cdnfonts.com/css/graphik');
 
 *,
 *::after,
@@ -6,6 +7,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+html,body {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +25,11 @@ body {
 #zuri-main *,
 #zuri-footer * {
     font-family: 'Averta-Regular', sans-serif;
+}
+#zuri-training-head *,
+#zuri-training-main *,
+#zuri-training-footer * {
+    font-family: 'Graphik', sans-serif;
 }
 
 /* Zuri Head */
@@ -869,7 +879,7 @@ text-decoration: none;
     position: absolute;
     top: 50%;
     right: 1.25rem;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     font-size: 1.5rem;
     transition: all 0.3s;
 }
@@ -1105,6 +1115,10 @@ text-decoration: none;
     color: #1b1a20;
 }
 
+.footer-training-hr {
+    display: none;
+}
+
 /* Modal Main */
 #modal-wrapper {
     display: none;
@@ -1233,6 +1247,10 @@ text-decoration: none;
         flex-direction: column;
     }
 
+    #zuri-training-main .zuri-training-main-5 .zuri-training-main-5-item1 .zuri-5-point-wrapper {
+        flex-wrap: nowrap;
+    }
+
     #zuri-training-main .zuri-training-main-5 .zuri-training-main-5-item1,
     #zuri-training-main .zuri-training-main-5 .zuri-training-main-5-item2  {
         width: 100%;
@@ -1345,12 +1363,32 @@ text-decoration: none;
 
   /* Media Queries for Mobile */
   @media screen and (min-width:350px) and (max-width:899px) {
+    #zuri-training-head {
+        padding: 1.5rem;
+    }
+
+    #zuri-training-head .img-text img {
+        width: 3.5rem;
+        margin-left: -35px;
+        padding: 10px;
+        margin-top: -27px;
+    }
+
     #zuri-training-head .navbar .menu {
         display: none;
     }
 
     #zuri-training-head .navbar .navbar-logo {
         width: 55%;
+    }
+
+    #zuri-training-head .navbar-logo img {
+        width: 80%;
+    }
+
+    #zuri-training-head .img-text .enroll {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 
     #zuri-training-main .zuri-training-main-1 {
@@ -1606,7 +1644,238 @@ text-decoration: none;
         text-align: center;
     }
 
-    #zuri-training-head .navbar-logo img {
-        width: 90%;
+    #modal-wrapper .modal-container {
+        padding: 2rem;
+        width: 80%;
     }
+  }
+
+  /* Zuri Talent */
+
+  /* Zuri Talent Head */
+  #zuri-talent-head {
+    padding: 1rem 6rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  #zuri-talent-head nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #zuri-talent-head nav .menu-items {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #zuri-talent-head nav .menu-items a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: .01em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #161617;
+  }
+
+  #zuri-talent-head nav .menu-items .header-btn {
+    background-color: #e7332b;
+    border-radius: 0 0 8px 0;
+    color: #ffffff;
+    line-height: 1.9rem;
+    padding: 11px 35px;
+  }
+
+  /* Zuri Talent Main */
+
+  /* Zuri Talent Section 1 */
+
+  #zuri-talent-main .zuri-talent-main-1 {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 6rem;
+  }
+
+  #zuri-talent-main .zuri-talent-main-1-item-1,
+  #zuri-talent-main .zuri-talent-main-1-item-2 {
+    width: 50%;
+  }
+
+  #zuri-talent-main .zuri-talent-main-1-item-1 h2,
+  #zuri-talent-main .zuri-talent-main-2-item-1 h2,
+  #zuri-talent-main .zuri-talent-main-3 h2 {
+    color: #161617;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 49px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-1-item-1 span,
+  #zuri-talent-main .zuri-talent-main-2-item-1 span,
+  #zuri-talent-main .zuri-talent-main-3 span {
+    color: rgb(231, 51, 43);
+  }
+
+  #zuri-talent-main .zuri-talent-main-1-item-1 .talent-line-1 {
+    margin-left: 432px;
+    margin-top: -24px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 .talent-line-1 img {
+        width: 100%;
+    }
+
+
+#zuri-talent-main .zuri-talent-main-1-item-1 p {
+    color: #787878;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 78%;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-1 a {
+    border-radius: 0 0 8px 0;
+    line-height: 1.9rem;
+    padding: 11px 50px;
+    text-decoration: none;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-1 .talent-top-btns {
+    margin-top: 30px;
+    display: inline-flex;
+    gap: 1rem;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-1 .first-btn {
+    background-color: #e7332b;
+    color: #ffffff;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-1 .second-btn {
+    background-color: #585858;
+    color: #ffffff;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-2 img {
+    width: 70%;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-2 .talent-two-typing {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-2 .talent-line-2 {
+    margin-top: -172px;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    right: 0;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-2 .talent-line-2 img {
+    width: 138px;
+}
+
+
+/* Zuri Talent Section 2 */
+
+#zuri-talent-main .zuri-talent-main-2 {
+    background: url(img/bgsection2.png) no-repeat;
+    background-size: cover;
+    padding: 1rem 6rem;
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 142px;
+    padding-top: 90px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-1,
+  #zuri-talent-main .zuri-talent-main-2-item-2 {
+    width: 50%;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-1 h4 {
+    font-size: 19px;
+    line-height: 22px;
+    color: #161617;
+    padding-top: 10px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-1 p {
+    color: #787878;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 78%;
+    padding-top: 10px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-1 .countries {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 19px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-1 .country {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 7px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-1 .country img {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #zuri-talent-main .zuri-talent-main-2-item-2 img {
+    width: 70%
+  }
+
+  /* Zuri Talent Section 3 */
+
+    #zuri-talent-main .zuri-talent-main-3 {
+        padding: 6.25rem 6rem;
+  }
+
+  #zuri-talent-main .zuri-talent-main-3 h2 {
+    width: 41%;
+    padding-bottom: 35px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-3 .talent-items {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #zuri-talent-main .zuri-talent-main-3 .talent-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+    color: #787878;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    padding: 10px 20px;
+    text-align: center;
+    letter-spacing: 0.00938em;
   }
