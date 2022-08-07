@@ -28,8 +28,19 @@ body {
 }
 #zuri-training-head *,
 #zuri-training-main *,
-#zuri-training-footer * {
+#zuri-training-footer *,
+#zuri-talent-head,
+#zuri-talent-main,
+#zuri-talent-footer {
     font-family: 'Graphik', sans-serif;
+}
+
+#zuri-talent-footer .footer-hr-div {
+    display: none;
+    }
+
+#zuri-talent-footer .zuri-talent-footer-hr {
+    display: none;
 }
 
 /* Zuri Head */
@@ -1659,7 +1670,7 @@ text-decoration: none;
     top: 0;
     width: 100%;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 10;
   }
   #zuri-talent-head nav {
     display: flex;
@@ -1687,6 +1698,7 @@ text-decoration: none;
     color: #ffffff;
     line-height: 1.9rem;
     padding: 11px 35px;
+    white-space: nowrap;
   }
 
   /* Zuri Talent Main */
@@ -1709,7 +1721,8 @@ text-decoration: none;
 
   #zuri-talent-main .zuri-talent-main-1-item-1 h2,
   #zuri-talent-main .zuri-talent-main-2-item-1 h2,
-  #zuri-talent-main .zuri-talent-main-3 h2 {
+  #zuri-talent-main .zuri-talent-main-3 h2,
+  #zuri-talent-main .zuri-talent-main-4 h2 {
     color: #161617;
     font-size: 40px;
     font-weight: 800;
@@ -1718,7 +1731,8 @@ text-decoration: none;
 
   #zuri-talent-main .zuri-talent-main-1-item-1 span,
   #zuri-talent-main .zuri-talent-main-2-item-1 span,
-  #zuri-talent-main .zuri-talent-main-3 span {
+  #zuri-talent-main .zuri-talent-main-3 span,
+  #zuri-talent-main .zuri-talent-main-4 span {
     color: rgb(231, 51, 43);
   }
 
@@ -1740,7 +1754,8 @@ text-decoration: none;
     width: 78%;
 }
 
-#zuri-talent-main .zuri-talent-main-1-item-1 a {
+#zuri-talent-main .zuri-talent-main-1-item-1 a,
+#zuri-talent-main .zuri-talent-main-4 a {
     border-radius: 0 0 8px 0;
     line-height: 1.9rem;
     padding: 11px 50px;
@@ -1749,18 +1764,23 @@ text-decoration: none;
 
 #zuri-talent-main .zuri-talent-main-1-item-1 .talent-top-btns {
     margin-top: 30px;
-    display: inline-flex;
-    gap: 1rem;
+    /* gap: 1rem; */
+    white-space: nowrap;
+    display: inline-block;
 }
 
-#zuri-talent-main .zuri-talent-main-1-item-1 .first-btn {
+#zuri-talent-main .zuri-talent-main-1-item-1 .first-btn,
+#zuri-talent-main .zuri-talent-main-4 .first-btn {
     background-color: #e7332b;
     color: #ffffff;
+    margin-right: 0.5rem;
 }
 
-#zuri-talent-main .zuri-talent-main-1-item-1 .second-btn {
+#zuri-talent-main .zuri-talent-main-1-item-1 .second-btn,
+#zuri-talent-main .zuri-talent-main-4 .second-btn {
     background-color: #585858;
     color: #ffffff;
+    margin-right: 0.5rem;
 }
 
 #zuri-talent-main .zuri-talent-main-1-item-2 img {
@@ -1791,9 +1811,9 @@ text-decoration: none;
     background-size: cover;
     padding: 1rem 6rem;
     display: flex;
+    align-items: center;
     margin-top: 100px;
-    padding-bottom: 142px;
-    padding-top: 90px;
+    padding: 90px 6rem 142px;
   }
 
   #zuri-talent-main .zuri-talent-main-2-item-1,
@@ -1878,4 +1898,528 @@ text-decoration: none;
     padding: 10px 20px;
     text-align: center;
     letter-spacing: 0.00938em;
+    transition: transform .3s ease,-webkit-transform .3s ease;
+    white-space: nowrap;
+  }
+
+  #zuri-talent-main .zuri-talent-main-3 .talent-item:hover {
+    transform: translateY(-15px);
+  }
+
+  /* Zuri Talent Section 4 */
+  #zuri-talent-main .zuri-talent-main-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 6rem 5rem;
+    background-color: rgb(255, 248, 229);
+    padding-bottom: 80px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .talent-4-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 80px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .talent-main-4-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0 0 16px 0;
+    color: #787878;
+    padding: 4rem 10px;
+    width: 32%;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .talent-main-4-box:hover {
+    background-color: #161617;
+    color: #ffffff;
+    box-shadow: 0 8px 30px hsl(0deg 0% 69% / 7%);
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .talent-main-4-box p {
+    padding-top: 15px;
+    width: 85%;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .invisible-box-4 {
+    width: 15%;
+    z-index: 1;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 h2 {
+    padding-top: 100px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .talent-4-rope {
+    position: absolute;
+    left: 0;
+    margin-top: 275px;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .talent-4-rope img {
+    width: 100%;
+  }
+
+  #zuri-talent-main .zuri-talent-main-4 .talent-btns {
+    margin-top: 70px;
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+  }
+
+  /* Talent Footer */
+
+  #zuri-talent-footer {
+    background-color: rgb(22, 22, 23);
+    padding: 1rem 3rem;
+  }
+
+  #zuri-talent-footer .zuri-talent-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  #zuri-talent-footer .zuri-talent-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  #zuri-talent-footer .zuri-talent-top .social-footer-talent {
+    display: flex;
+    gap: 1rem;
+  }
+
+  #zuri-talent-footer .zuri-talent-top .social-footer-talent img {
+    width: 30px;
+  }
+
+  #zuri-talent-footer .zuri-talent-bottom {
+    margin-top: 1rem;
+    padding-top: 20px;
+  }
+
+  #zuri-talent-footer .zuri-talent-bottom p,
+  #zuri-talent-footer .zuri-talent-bottom a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.4rem;
+    text-decoration: none;
+  }
+
+@media screen and (min-width:891px) and (max-width:1199px) {
+    #zuri-talent-head nav .menu-items {
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1 {
+        flex-direction: column;
+        margin-top: 20%;
+      }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1,
+    #zuri-talent-main .zuri-talent-main-1-item-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 .talent-line-1 {
+    margin-left: 60vw;
+    margin-top: -24px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 .talent-line-2 {
+    display: none;
+    }
+    
+    #zuri-talent-main .zuri-talent-main-1-item-1 p {
+        padding-top: 0.9rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 .talent-top-btns {
+        margin-top: 30px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 .talent-two-typing {
+        display: block;
+        margin-top: 3.125rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 img {
+        width: 70%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2 {
+        flex-direction: column;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1,
+    #zuri-talent-main .zuri-talent-main-2-item-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-2 {
+        margin-top: 3.125rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+        
+    #zuri-talent-main .zuri-talent-main-3 .talent-items {
+        flex-wrap: wrap;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 .talent-item {
+        width: 30%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .talent-main-4-box {
+        width: 48%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .invisible-box-4 {
+        display: none;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .big-width {
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width:601px) and (max-width:890px) {
+    #zuri-talent-head {
+    padding: 1rem 3rem;
+}
+
+    #zuri-talent-head nav .menu-items > a {
+        display: none;
+    }
+
+    #zuri-talent-head nav .menu-items {
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1 {
+        flex-direction: column;
+        margin-top: 20%;
+      }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1,
+    #zuri-talent-main .zuri-talent-main-1-item-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 .talent-line-1 {
+    margin-left: 60vw;
+    margin-top: -24px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 .talent-line-2 {
+    display: none;
+    }
+    
+    #zuri-talent-main .zuri-talent-main-1-item-1 p {
+        padding-top: 0.9rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 .talent-top-btns {
+        margin-top: 30px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 .talent-two-typing {
+        display: block;
+        margin-top: 3.125rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 img {
+        width: 70%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2 {
+        flex-direction: column;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1,
+    #zuri-talent-main .zuri-talent-main-2-item-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-2 {
+        margin-top: 3.125rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 {
+        padding: 6.25rem 3rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+        
+    #zuri-talent-main .zuri-talent-main-3 .talent-items {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 .talent-item {
+        width: 30%;
+        font-size: 0.9rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 {
+        padding: 1rem 3rem 5rem;
+    }
+    #zuri-talent-main .zuri-talent-main-4 .talent-main-4-box {
+        width: 48%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .invisible-box-4 {
+        display: none;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .big-width {
+        width: 100%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 h2 {
+        font-size: 1.875rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 .countries {
+        gap: 1rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 .country {
+        width: 70px;
+    }
+
+    #zuri-talent-footer {
+        background-color: rgb(22, 22, 23);
+        padding: 1rem 2rem;
+    }
+
+    #zuri-talent-footer .zuri-talent-top {
+        justify-content: space-around;
+    }
+  }
+
+
+  @media screen and (min-width:350px) and (max-width:600px) {
+    #zuri-talent-head {
+    padding: 1rem;
+}
+
+    #zuri-talent-head nav .menu-items > a {
+        display: none;
+    }
+
+    #zuri-talent-head nav .menu-items {
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1 {
+        flex-direction: column;
+        margin-top: 20%;
+        padding: 1rem;
+      }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1,
+    #zuri-talent-main .zuri-talent-main-1-item-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 a,
+    #zuri-talent-main .zuri-talent-main-4 a {
+        padding: 8px 25px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 .talent-line-1 {
+    margin-left: 60vw;
+    margin-top: -24px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 .talent-line-2 {
+    display: none;
+    }
+    
+    #zuri-talent-main .zuri-talent-main-1-item-1 p {
+        padding-top: 0.9rem;
+        width: 100%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-1 .talent-top-btns {
+        margin-top: 30px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 .talent-two-typing {
+        display: block;
+        margin-top: 3.125rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-1-item-2 img {
+        width: 100%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2 {
+        flex-direction: column;
+        padding: 90px 1rem 142px;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1,
+    #zuri-talent-main .zuri-talent-main-2-item-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-2 {
+        margin-top: 3.125rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 {
+        justify-content: unset;
+        align-items: unset;
+        text-align: left;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 h4 {
+        text-align: left;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 {
+        padding: 6.25rem 1.2rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.75rem;
+        text-align: left;
+        line-height: 2rem;
+    }
+
+        
+    #zuri-talent-main .zuri-talent-main-3 .talent-items {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-3 .talent-item {
+        width: 47.5%;
+        font-size: 0.9rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 {
+        padding: 1rem 1rem 5rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 h2 {
+        font-size: 1.75rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .talent-main-4-box {
+        width: 100%;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .invisible-box-4 {
+        display: none;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 h2 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 .countries {
+        gap: 1rem;
+    }
+
+    #zuri-talent-main .zuri-talent-main-2-item-1 .country {
+        width: 70px;
+    }
+
+    #zuri-talent-footer {
+        background-color: rgb(22, 22, 23);
+        padding: 1rem 2rem;
+    }
+
+    #zuri-talent-footer .zuri-talent-top {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+
+    #zuri-talent-footer .zuri-talent-bottom {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    #zuri-talent-footer .footer-hr-div {
+        display: block;
+        padding-top: 20px;
+        width: 100%;
+        }
+
+    #zuri-talent-footer .zuri-talent-footer-hr {
+        display: block;
+    border: thin solid gray;
+    opacity: 0.2;
+    }
+
+    #zuri-talent-main .zuri-talent-main-4 .talent-btns {
+        display: block;
+    }
   }
