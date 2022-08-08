@@ -1,3 +1,13 @@
+// Talent Page Head Line Switch
+const links = document.querySelectorAll(".menu-items a");
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    document.querySelector("a.active").classList.remove("active");
+    link.classList.add("active");
+  });
+});
+
 // Accordion
 const accordion = document.getElementsByClassName('accordion-container');
 
