@@ -17,7 +17,7 @@
                 <a href="#zuri-talent-main-2" class="zuri-menu-link">Impact</a>
                 <a href="#zuri-talent-main-4" class="zuri-menu-link">Why Us</a>
     
-                <div><a href="" class="header-btn">Hire talents</a></div>
+                <div id="modal9-5"><span class="header-btn">Hire talents</a></span>
             </div>
         </nav>
     </header>
@@ -132,6 +132,48 @@
         </div>
     </footer>
 
-    <script src="app.js" defer></script>
+    <div id="modal-wrapper" class="modal">
+        <div class="modal-container modal-container-talent">
+            <div id="modal-top">
+                <h2>Talent Recruitment</h2>
+                <img src="img/eva_close-outline.svg" alt="" id="modal-close">
+            </div>
+            <p>We will love to discuss your business and your talent needs.</p>
+            <div class="btn-modal-pop"><a href="#">Fill this form</a></div>
+            <p>OR</p>
+            <div class="btn-modal-pop"><a href="#">Book a Consultation</a></div>
+        </div>
+    </div>
+
+    <script>
+            window.onload = function() {
+            // Modal
+            // Get the modal
+            var modal = document.getElementById("modal-wrapper");
+
+            // Get the button that opens the modal
+            var btn5 = document.getElementById("modal9-5");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementById("modal-close");
+
+            // When the user clicks on the button, open the modal
+            btn5.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+                }
+            };
+        }
+    </script>
 </body>
 </html>
