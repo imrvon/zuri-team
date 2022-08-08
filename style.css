@@ -1752,6 +1752,7 @@ text-decoration: none;
     font-weight: 400;
     line-height: 22px;
     width: 78%;
+    padding-top: 15px;
 }
 
 #zuri-talent-main .zuri-talent-main-1-item-1 a,
@@ -1760,6 +1761,11 @@ text-decoration: none;
     line-height: 1.9rem;
     padding: 11px 50px;
     text-decoration: none;
+}
+
+#zuri-talent-main .zuri-talent-main-1-item-1 a:hover,
+#zuri-talent-main .zuri-talent-main-4 a:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
 }
 
 #zuri-talent-main .zuri-talent-main-1-item-1 .talent-top-btns {
@@ -1999,6 +2005,7 @@ text-decoration: none;
 
   #zuri-talent-footer .zuri-talent-top .social-footer-talent {
     display: flex;
+    align-items: center;
     gap: 1rem;
   }
 
